@@ -1,10 +1,11 @@
-# Compilando e Executando um Programa OpenGL Moderno <h1>
-## Sobre a atividade <h2>
+# Compilando e Executando um Programa OpenGL Moderno
+
+## Sobre a atividade
 A atividade a seguir tem como objetivo verificar se o ambiente de desenvolvimento em OpenGL 3.3 está corretamente configurado no computador dos alunos e familizarizar os alunos com a estrutura de um programa OpenGL moderno. Para isso, deve-se instalar o OpenGL na máquina, compilar e executar o seguinte programa:
 
 ![image](https://user-images.githubusercontent.com/72406702/95122270-9e3ece80-0726-11eb-9619-2af969afdb42.png)
 
-## Configuração <h2>
+## Configuração
 Inicialmente, tentei instalar e configurar o OpenGL no Windows10, tentando executar o programa através do VSCode. No entanto, aconteceram vários erros e não consegui executá-lo. Com isso, migrei para o sistema operacional Linux Mint, onde consegui configurar e rodar sem muita dificuldade.
 Com isso em vista, instalei o OpenGL no Linux Mint utilizando os seguintes códigos (em sequência):
 
@@ -39,8 +40,8 @@ Após isso, obtive o seguinte resultado:
 
 Com isso, percebe-se que o programa compilou e executou com sucesso. 
 
-## Conclusão <h2>
+## Conclusão
 Portanto, no meu caso, a maior dificuldade foi configurar o OpenGL usando o Windows junto com o VSCode, onde a maioria dos erros eram por não encontrar o caminho certo para as bibliotecas do OpenGL, e, além disso, não consegui encontrar possíveis soluções para esse problema. Ao mudar para o LinuxMint, encontrei vários tutoriais que foram de suma importância para que eu obtivesse êxito na instalação e, posteriormente, na compilação e execução do programa, apesar de nunca ter utilizado o LinuxMint.
   
-## Referências <h2>
+## Referências
 Site utilizado: <https://pt.wikihow.com/Instalar-Mesa-(OpenGL)-no-Linux-Mint>
