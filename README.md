@@ -25,8 +25,9 @@ sudo apt-get install libglew1.5-dev libglm-dev
 ## Execução
 Para rodar o programa, precisei executar os comandos:
 
+OBS: main.c é o arquivo principal e o exerc é o programa executável.
 ~~~
-gcc main.c -o exerc -lglut -lGLU -lGL (main.c é o arquivo principal e o exerc é o programa executável)
+gcc main.c -o exerc -lglut -lGLU -lGL
 ~~~
 ~~~
 ./exerc
