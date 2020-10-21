@@ -17,6 +17,8 @@ void PutPixel(Pixel *p, Color *c) {
 ~~~
 
 Após utilizá-la, obtive o seguinte resultado:
+
+
 ![image](https://user-images.githubusercontent.com/72406702/96666489-9fc6e400-132d-11eb-8ec0-a1df90aaaefe.png)
 
 ## Função DrawLine
@@ -26,6 +28,8 @@ A função DrawLine foi feita com base no algoritmo passado pelo professor na au
 void DrawLine(Pixel *pixel1, Pixel *pixel2, Color *c, Color *c1);
 ~~~
 Ao utilizar a função, obtive o seguinte resultado:
+
+
 ![Captura de tela de 2020-10-20 23-43-59](https://user-images.githubusercontent.com/72406702/96666951-76f31e80-132e-11eb-9320-8d219a531d57.png)
 
 ## Função DrawTriangle
@@ -38,6 +42,8 @@ void DrawTriangle(Pixel *p1, Pixel *p2, Pixel *p3, Color *c, Color *c1) {
 }
 ~~~
 Após isso, obtive o seguinte resultado:
+
+
 ![image](https://user-images.githubusercontent.com/72406702/96665696-db60ae80-132b-11eb-8e74-d6ee8fe97252.png)
 
 ## Dificuldades Encontradas
