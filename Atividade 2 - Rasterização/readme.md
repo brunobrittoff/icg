@@ -15,8 +15,7 @@ void PutPixel(Pixel *p, Color *c) {
     fb_ptr[4*(p->x) + 4*(p->y)*IMAGE_WIDTH + 3]  = c->a;
 }
 ~~~
-Após utilizá-la, obtive o seguinte resultado
-
+Após utilizá-la, obtive o seguinte resultado:
 ![image](https://user-images.githubusercontent.com/72406702/96666489-9fc6e400-132d-11eb-8ec0-a1df90aaaefe.png)
 
 
@@ -26,6 +25,8 @@ A função DrawLine foi feita com base no algoritmo passado pelo professor na au
 ~~~
 void DrawLine(Pixel *pixel1, Pixel *pixel2, Color *c, Color *c1);
 ~~~
+Ao utilizar a função, obtive o seguinte resultado:
+![image](https://user-images.githubusercontent.com/72406702/96666757-2b407500-132e-11eb-92bc-d248002762bf.png)
 
 ## Função DrawTriangle
 A função DrawTriangle recebe por parâmetros três estruturas Pixel, responsáveis por rasterizar as retas, e duas estruturas Color, responsáveis por suas cores.
