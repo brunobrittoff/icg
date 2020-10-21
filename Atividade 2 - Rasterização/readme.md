@@ -15,6 +15,10 @@ void PutPixel(Pixel *p, Color *c) {
     fb_ptr[4*(p->x) + 4*(p->y)*IMAGE_WIDTH + 3]  = c->a;
 }
 ~~~
+Após utilizá-la, obtive o seguinte resultado
+
+![image](https://user-images.githubusercontent.com/72406702/96666489-9fc6e400-132d-11eb-8ec0-a1df90aaaefe.png)
+
 
 ## Função DrawLine
 A função DrawLine foi feita com base no algoritmo passado pelo professor na aula 06 - Rasterização de Linhas, utilizando o Algoritmo do Ponto Médio. Para essa função, ela recebe por parâmetros duas estruturas Pixel e duas estruturas Color. Como a função ficou muito grande, deixarei apenas o que tem no arquivo mygl.h, mas a função completa está na mygl.c
