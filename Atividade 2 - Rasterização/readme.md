@@ -124,6 +124,7 @@ Portanto, pode-se perceber que a atividade foi concluída com sucesso, com a for
 ## Possíveis melhoras
 * Fazer um triângulo com interpolação contínua para melhorar a estética da imagem gerada.
 * Fazer o algoritmo para outras estruturas geométricas.
+* Interpolar mais de três cores.
 
 ## Referências
 Sites utilizados:
