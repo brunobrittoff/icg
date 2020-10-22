@@ -104,7 +104,7 @@ No meu caso, a maior dificuldade foi na questão da implementação do Algoritmo
 
 ![TentandoPrintarSudoeste](https://user-images.githubusercontent.com/72406702/96927363-52618880-148d-11eb-9dd9-9256e7f8538d.png)
 
-Ao realizar as correções, ele continuou na horizontal, mas foi apenas um erro de desatenção. Ao corrigir, obtive o seguinte resultado, junto com o algoritmo de interpolação de iores:
+Ao realizar as correções, ele continuou na horizontal, mas foi apenas um erro de desatenção. Ao corrigir, obtive o seguinte resultado, junto com o algoritmo de interpolação de cores:
 
 ![Captura de tela de 2020-10-22 17-43-11](https://user-images.githubusercontent.com/72406702/96927913-2c88b380-148e-11eb-9339-886d1b6e0e60.png)
 
