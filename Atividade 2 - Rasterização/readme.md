@@ -17,7 +17,8 @@ struct _Pixel{
 };
 ~~~
 ## Estruturas Auxiliares
-Para desenvolver a atividade, eu criei duas funções, a squareRoot e a distanceBetweenPixels, para evitar o uso da biblioteca math. A função squareRoot faz o cálculo da raiz quadrada sem utilizar o sqrt, já a função distanceBetweenPixels realiza o cálculo da hipotenusa. Seus códigos ficaram da seguinte forma:
+<p style='text-align: justify;'> Para desenvolver a atividade, eu criei duas funções, a squareRoot e a distanceBetweenPixels, para evitar o uso da biblioteca math. A função squareRoot faz o cálculo da raiz quadrada sem utilizar o sqrt, já a função distanceBetweenPixels realiza o cálculo da hipotenusa. Seus códigos ficaram da seguinte forma: </p>
+
 
 ~~~
 int squareRoot(int x) { 
@@ -61,7 +62,7 @@ Após utilizá-la, obtive o seguinte resultado:
 ![image](https://user-images.githubusercontent.com/72406702/96666489-9fc6e400-132d-11eb-8ec0-a1df90aaaefe.png)
 
 ## Função DrawLine
-A função DrawLine foi feita com base no algoritmo passado pelo professor na aula 06 - Rasterização de Linhas, utilizando o Algoritmo do Ponto Médio. Para essa função, ela recebe por parâmetro duas estruturas Pixel e duas estruturas Color. Como a função ficou muito grande, deixarei apenas o que tem no arquivo mygl.h, mas a função completa está na mygl.c
+A função DrawLine foi feita com base no algoritmo passado pelo professor na aula 06 - Rasterização de Linhas, utilizando o Algoritmo do Ponto Médio. Para essa função, ela recebe por parâmetro duas estruturas Pixel e duas estruturas Color. Como a função ficou muito grande, deixarei apenas o que tem no arquivo `mygl.h`, mas a função completa está na `mygl.c`.
 
 ~~~
 void DrawLine(Pixel *pixel1, Pixel *pixel2, Color *c, Color *c1);
