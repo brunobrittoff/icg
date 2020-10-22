@@ -2,10 +2,9 @@
 #define MYGL_H
 
 #include <string.h>
+#include <stdlib.h>
 #include "core.h"
 #include "frame_buffer.h"
-
-// Declaração da função que chamará as funções implementadas pelo aluno
 
 struct _Color;  
 typedef struct _Color Color;
@@ -21,11 +20,10 @@ void DrawLine(Pixel *p1, Pixel *p2, Color *c, Color *c1);
 
 void DrawTriangle(Pixel *p1, Pixel *p2, Pixel *p3, Color *c, Color *c1);
 
+float distanceBetweenPixels(Pixel *pixel1, Pixel *pixel2);
 
+int squareRoot(int x);
 
-
-//
-// >>> Declare aqui as funções que você implementar <<<
-//
+Color* interpolColor(float p, Color *c, Color *c1);
 
 #endif  // MYGL_H

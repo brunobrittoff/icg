@@ -1,6 +1,4 @@
 #include "mygl.h"//// >>> Defina aqui as funções que você implementar <<< //
-#include <stdlib.h>
-#include <stdio.h>
 
 struct _Color {
     int r,g,b,a;
@@ -31,22 +29,13 @@ void DrawLine(Pixel *pixel1, Pixel *pixel2, Color *c, Color *c1) {
     int fposy = pixel2->y;
     int xdecres;
     int ydecres;
+    float distP;
+    float distT = distanceBetweenPixels(pixel1,pixel2);
     
     Color *newcolor = (Color*)malloc(sizeof(Color));
-    
+
     newcolor = c;
-    int linesize = dx;
-    if(linesize == 0) {
-        linesize = 100;
-    }
-    float dr = (c1->r - c->r)/linesize;
-    float dg = (c1->g - c->g)/linesize;
-    float db = (c1->b - c->b)/linesize;
-
-    newcolor->r = newcolor->r+dr;
-    newcolor->g = newcolor->g+dg;
-    newcolor->b = newcolor->b+db;
-
+    
     if(posx > fposx) {
         xdecres = 1;
     }
@@ -72,6 +61,8 @@ void DrawLine(Pixel *pixel1, Pixel *pixel2, Color *c, Color *c1) {
             Pixel *pixelatual = (Pixel*)malloc(sizeof(Pixel));
             pixelatual->x = pixel1->x;
             pixelatual->y = posi;
+            distP = distanceBetweenPixels(pixelatual,pixel2);
+            newcolor = interpolColor(distP/distT,c,c1);
             PutPixel(pixelatual, newcolor);
             ydecres ? posi-- : posi++;
         }
@@ -90,6 +81,8 @@ void DrawLine(Pixel *pixel1, Pixel *pixel2, Color *c, Color *c1) {
             Pixel *pixelatual = (Pixel*)malloc(sizeof(Pixel));
             pixelatual->x = posi;
             pixelatual->y = pixel1->y;
+            distP = distanceBetweenPixels(pixelatual,pixel2);
+            newcolor = interpolColor(distP/distT,c,c1);
             PutPixel(pixelatual, newcolor);
             xdecres ? posi-- : posi++;
         }
@@ -131,6 +124,8 @@ void DrawLine(Pixel *pixel1, Pixel *pixel2, Color *c, Color *c1) {
             Pixel *pixelatual = (Pixel*)malloc(sizeof(Pixel));
             pixelatual->x = posx;
             pixelatual->y = posy;
+            distP = distanceBetweenPixels(pixelatual,pixel2);
+            newcolor = interpolColor(distP/distT,c,c1);
             PutPixel(pixelatual, newcolor);
         } 
 
@@ -172,6 +167,8 @@ void DrawLine(Pixel *pixel1, Pixel *pixel2, Color *c, Color *c1) {
             Pixel *pixelatual = (Pixel*)malloc(sizeof(Pixel));
             pixelatual->x = posx;
             pixelatual->y = posy;
+            distP = distanceBetweenPixels(pixelatual,pixel2);
+            newcolor = interpolColor(distP/distT,c,c1);
             PutPixel(pixelatual, newcolor);
         } 
 
@@ -186,17 +183,41 @@ void DrawTriangle(Pixel *p1, Pixel *p2, Pixel *p3, Color *c, Color *c1) {
     DrawLine(p3, p1, c, c1);
 }
 
-// Definição da função que chamará as funções implementadas pelo aluno
+float distanceBetweenPixels(Pixel *pixel1, Pixel *pixel2){
+    return squareRoot((pixel2->x-pixel1->x)*(pixel2->x-pixel1->x)+(pixel2->y-pixel1->y)*(pixel2->y-pixel1->y));
+}
+
+int squareRoot(int x) 
+{ 
+    if (x == 0 || x == 1) 
+    return x; 
+
+    int i = 1, result = 1; 
+    while (result <= x) 
+    { 
+      i++; 
+      result = i * i; 
+    } 
+    return i - 1; 
+}
+
+Color* interpolColor(float p, Color *c, Color *c1) {
+    Color *newcolor = (Color*)malloc(sizeof(Color));
+    newcolor->r = c->r*p + (1-p)*c1->r;
+    newcolor->g = c->g*p + (1-p)*c1->g;
+    newcolor->b = c->b*p + (1-p)*c1->b;
+    newcolor->a = c->a*p + (1-p)*c1->a;
+    return newcolor;
+}
 
 void MyGlDraw(void) {
+    
     Pixel *pontoInicial = (Pixel*)malloc(sizeof(Pixel));
     Pixel *pontoFinal = (Pixel*)malloc(sizeof(Pixel));
     Pixel *pontoMedio = (Pixel*)malloc(sizeof(Pixel));
     Color *c = (Color*)malloc(sizeof(Color));
     Color *c1 = (Color*)malloc(sizeof(Color));
-    //    
-    // >>> Chame aqui as funções que você implementou <<<
-    //    
+        
     pontoInicial->x = 150;
     pontoInicial->y = 150;   
     pontoMedio->x = 150;
@@ -212,13 +233,14 @@ void MyGlDraw(void) {
     c1->b = 0;
     c1->a = 255;
     
-    
+
     DrawTriangle(pontoInicial, pontoMedio, pontoFinal, c, c1);
 
     free(pontoInicial);
     free(pontoMedio);
     free(pontoFinal);
     free(c);
+    free(c1);
 }
 
 
