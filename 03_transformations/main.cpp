@@ -106,10 +106,10 @@ void Display(void) {
 
     glm::mat4 view_mat = glm::make_mat4(view_array);
 
-    // Contém as informações da Câmera                           Exercício 4
+    // Contém as informações da câmera                           Exercício 4
      
     float camera_position[3]  = {-0.1f, 0.1f, 0.1f},  // posição da câmera
-          camera_up[3]   =      {0.0f, 1.0f, 0.0f},     // up
+          camera_up[3]   =      {0.0f, 1.0f, 0.0f},     // up da câmera
           camera_pointer[3] =   {0.0f, 0.0f, -1.0f};     // posição apontada pela câmera
 
     glm::vec3 cam_position  = glm::make_vec3(camera_position);
