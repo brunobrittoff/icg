@@ -152,7 +152,7 @@ void Display(void) {
                             0.0f, 0.0f, 0.0f, 1.0f};*/
 
     float proj_array[16] = {1.0f, 0.0f, 0.0f, 0.0f, 
-                            0.0f, 1.0f, 0.0f, 0.0f,           // Exercício 5 - Translação com Tx = 0.2, Ty = 5.0 e d = 1/5a
+                            0.0f, 1.0f, 0.0f, 0.0f,           // Exercício 5 - Translação com Tx = 0.2, Ty = 5.0 e d = 1/5
                             0.2f, 5.0f, 1.0f, -5.0f, 
                             0.0f, 1.0f, 0.2f, 1.0f};
 
