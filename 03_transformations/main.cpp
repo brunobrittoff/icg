@@ -63,7 +63,7 @@ void Display(void) {
 
     // Seleciona o Shader Program a ser utilizado.
     glUseProgram(shader_program);
-
+        
     // Matriz Model ///////////////////////////////////////////////////////////
     // You will have to change the contents of this matrix for the exercises
     
@@ -95,7 +95,7 @@ void Display(void) {
     // Matriz View ////////////////////////////////////////////////////////////
     // You will have to change the contents of this matrix for the exercises
     float view_array[16] = {1.0f, 0.0f, 0.0f, 0.0f, 
-                            0.0f, 1.0f, 0.0f, 0.0f, 
+                            0.0f, 1.0f, 0.0f, 0.0f,           // Sem alterações
                             0.0f, 0.0f, 1.0f, 0.0f, 
                             0.0f, 0.0f, 0.0f, 1.0f};
 
@@ -108,7 +108,7 @@ void Display(void) {
 
     // Contém as informações da Câmera                           Exercício 4
      
-    /*float camera_position[3]  = {-0.1f, 0.1f, 0.1f},  // posição da câmera
+    float camera_position[3]  = {-0.1f, 0.1f, 0.1f},  // posição da câmera
           camera_up[3]   =      {0.0f, 1.0f, 0.0f},     // up
           camera_pointer[3] =   {0.0f, 0.0f, -1.0f};     // posição apontada pela câmera
 
@@ -130,21 +130,21 @@ void Display(void) {
                               glm::vec4(0.0f, 0.0f, 1.0f, 0.0f),
                               glm::vec4(-cam_position.x, -cam_position.y, -cam_position.z, 1.0f));
 
-    view_mat = B * T;*/
+    view_mat = B * T;
     
 
     // Matriz Projection //////////////////////////////////////////////////////
     // You will have to change the contents of this matrix for the exercises
     
-    /*float proj_array[16] = {1.0f, 0.0f, 0.0f, 0.0f, 
+    float proj_array[16] = {1.0f, 0.0f, 0.0f, 0.0f, 
                             0.0f, 1.0f, 0.0f, 0.0f,           // Exercício 3 e 4
                             0.0f, 0.0f, 1.0f, -8.0f, 
-                            0.0f, 0.0f, 0.125f, 1.0f};*/
+                            0.0f, 0.0f, 0.125f, 1.0f};
 
-    float proj_array[16] = {1.0f, 0.0f, 0.0f, 0.0f, 
+    /*float proj_array[16] = {1.0f, 0.0f, 0.0f, 0.0f, 
                             0.0f, 1.0f, 0.0f, 0.0f,           // Sem Alterações
                             0.0f, 0.0f, 1.0f, 0.0f, 
-                            0.0f, 0.0f, 0.0f, 1.0f};
+                            0.0f, 0.0f, 0.0f, 1.0f};*/
 
     /*float proj_array[16] = {1.0f, 0.0f, 0.0f, 0.0f, 
                             0.0f, 1.0f, 0.0f, 0.0f,           // Exercício 5 - Translação com Tx = 0.2, Ty = 5.0 e d = 1/5a
