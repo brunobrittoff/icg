@@ -77,15 +77,15 @@ void Display(void) {
                              0.0f, 0.0f, 1.0f, 0.0f, 
                              1.0f, 0.0f, 0.0f, 1.0f};*/
 
-    float model_array[16] = {1.0f, 0.0f, 0.0f, 0.0f, 
+    /*float model_array[16] = {1.0f, 0.0f, 0.0f, 0.0f, 
                              0.0f, 1.0f, 0.0f, 0.0f,          // Sem alterações
                              0.0f, 0.0f, 1.0f, 0.0f, 
-                             0.0f, 0.0f, 0.0f, 1.0f};
+                             0.0f, 0.0f, 0.0f, 1.0f};*/
         
-    /*float model_array[16] = {0.0f, -1.0f, 0.0f, 0.0f, 
+    float model_array[16] = {0.0f, -1.0f, 0.0f, 0.0f, 
                              1.0f, 0.0f, 0.0f, 0.0f,          // Exercício 5 - Rotação em 270°
                              0.0f, 0.0f, 1.0f, 0.0f, 
-                             0.0f, 0.0f, 0.0f, 1.0f};*/
+                             0.0f, 0.0f, 0.0f, 1.0f};
 
     
     
@@ -94,23 +94,28 @@ void Display(void) {
 
     // Matriz View ////////////////////////////////////////////////////////////
     // You will have to change the contents of this matrix for the exercises
-    float view_array[16] = {1.0f, 0.0f, 0.0f, 0.0f, 
+    /*float view_array[16] = {1.0f, 0.0f, 0.0f, 0.0f, 
                             0.0f, 1.0f, 0.0f, 0.0f,           // Sem alterações
-                            0.0f, 0.0f, 1.0f, 0.0f, 
-                            0.0f, 0.0f, 0.0f, 1.0f};
-
-    /*float view_array[16] = {0.5f, 0.0f, 0.0f, 0.0f, 
-                            0.0f, 0.5f, 0.0f, 0.0f,           // Exercício 5 - Escala
                             0.0f, 0.0f, 1.0f, 0.0f, 
                             0.0f, 0.0f, 0.0f, 1.0f};*/
 
+    float view_array[16] = {0.5f, 0.0f, 0.0f, 0.0f, 
+                            0.0f, 0.5f, 0.0f, 0.0f,           // Exercício 5 - Escala
+                            0.0f, 0.0f, 1.0f, 0.0f, 
+                            0.0f, 0.0f, 0.0f, 1.0f};
+
     glm::mat4 view_mat = glm::make_mat4(view_array);
 
-    // Contém as informações da câmera                           Exercício 4
+    // Contém as informações da câmera                           
      
-    float camera_position[3]  = {-0.1f, 0.1f, 0.1f},  // posição da câmera
-          camera_up[3]   =      {0.0f, 1.0f, 0.0f},     // up da câmera
-          camera_pointer[3] =   {0.0f, 0.0f, -1.0f};     // posição apontada pela câmera
+    /*float camera_position[3]  = {-0.1f, 0.1f, 0.1f},  // posição da câmera
+          camera_up[3]   =      {0.0f, 1.0f, 0.0f},     // up da câmera                         // Exercício 4
+          camera_pointer[3] =   {0.0f, 0.0f, -1.0f};*/     // posição apontada pela câmera /*
+
+
+    float camera_position[3]  = {1.0f, 0.1f, 0.1f},   // posição da câmera
+          camera_up[3]   =      {0.0f, 0.0f, 1.0f},     // up da câmera                         // Exercicio 5 com alteração na câmera
+          camera_pointer[3] =   {1.0f, 1.0f, -1.0f};    // posição apontada pela câmera      
 
     glm::vec3 cam_position  = glm::make_vec3(camera_position);
     glm::vec3 cam_up   = glm::make_vec3(camera_up);
@@ -136,20 +141,20 @@ void Display(void) {
     // Matriz Projection //////////////////////////////////////////////////////
     // You will have to change the contents of this matrix for the exercises
     
-    float proj_array[16] = {1.0f, 0.0f, 0.0f, 0.0f, 
+    /*float proj_array[16] = {1.0f, 0.0f, 0.0f, 0.0f, 
                             0.0f, 1.0f, 0.0f, 0.0f,           // Exercício 3 e 4
                             0.0f, 0.0f, 1.0f, -8.0f, 
-                            0.0f, 0.0f, 0.125f, 1.0f};
+                            0.0f, 0.0f, 0.125f, 1.0f};*/
 
     /*float proj_array[16] = {1.0f, 0.0f, 0.0f, 0.0f, 
                             0.0f, 1.0f, 0.0f, 0.0f,           // Sem Alterações
                             0.0f, 0.0f, 1.0f, 0.0f, 
                             0.0f, 0.0f, 0.0f, 1.0f};*/
 
-    /*float proj_array[16] = {1.0f, 0.0f, 0.0f, 0.0f, 
+    float proj_array[16] = {1.0f, 0.0f, 0.0f, 0.0f, 
                             0.0f, 1.0f, 0.0f, 0.0f,           // Exercício 5 - Translação com Tx = 0.2, Ty = 5.0 e d = 1/5a
                             0.2f, 5.0f, 1.0f, -5.0f, 
-                            0.0f, 1.0f, 0.2f, 1.0f};*/
+                            0.0f, 1.0f, 0.2f, 1.0f};
 
     glm::mat4 proj_mat = glm::make_mat4(proj_array);
 
