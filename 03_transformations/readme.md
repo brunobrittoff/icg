@@ -33,11 +33,11 @@ Gerando a seguinte imagem:
 ## Exercício 3
 Para a resolução do terceiro exercício, foi necessário efetuar uma mudança na **matriz projection**, com parâmetro d = 1/8, para que seja gerada a imagem solicitada na atividade, a figura 7. O código ficou dessa forma:
 
-![CODIGOEXERCICIO3](https://user-images.githubusercontent.com/72406702/101528818-8970f800-396e-11eb-881b-ddcc27472b11.png)
+![CORREÇÃOPROJARRAYEXERCICIO3](https://user-images.githubusercontent.com/72406702/101562342-02d80d00-39a6-11eb-94a6-bfd9bbd5864e.png)
 
 Gerando a seguinte imagem:
 
-![ATIVIDADEICGEXERCICIO3](https://user-images.githubusercontent.com/72406702/101529137-eec4e900-396e-11eb-9132-38bd0441b2d2.png)
+![EXERCICIO3CORRIGIDO](https://user-images.githubusercontent.com/72406702/101562932-1cc61f80-39a7-11eb-812d-01538bb0174d.png)
 
 ## Exercício 4
 Para a resolução do quarto exercício, baseado nas teorias passadas pelo professor durante as aulas, foi necessário adicionar mais código. Para que seja gerada a imagem solicitada na atividade, a figura 8, foram adicionadas informações como: a posição da câmera = (-1/10,1/10,1/10), o vetor up da câmera = (0,1,0) e o ponto  para  o  qual a câmera está apontando = (0,0,−1). O código ficou dessa forma:
@@ -46,7 +46,7 @@ Para a resolução do quarto exercício, baseado nas teorias passadas pelo profe
 
 Gerando a seguinte imagem:
 
-![ATIVIDADEICGEXERCICIO4](https://user-images.githubusercontent.com/72406702/101538065-55e89a80-397b-11eb-9a27-7276c800be0f.png)
+![CORRIGIDAEXERCICIO4](https://user-images.githubusercontent.com/72406702/101563058-58f98000-39a7-11eb-8559-b41347a15e89.png)
 
 ## Exercício 5
 Para a resolução do quinto exercício, existiam duas condições: Modificar as 3 matrizes para formar uma nova cena e ser diferente das cenas apresentadas anteriormente. Para realizar o exercício, fui fazendo na seguinte sequência: modificar a matriz model, para realizar uma rotação de 270°, modificar a matriz view, para modificar a escala, e modificar a matriz projection, para realizar uma translação com Tx = 0.2, Ty = 5.0 e d = 1/5. Uma opção também seria alterar a câmera.
