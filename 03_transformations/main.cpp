@@ -110,7 +110,7 @@ void Display(void) {
      
     /*float camera_position[3]  = {-0.1f, 0.1f, 0.1f},  // posição da câmera
           camera_up[3]   =      {0.0f, 1.0f, 0.0f},     // up da câmera                         // Exercício 4
-          camera_pointer[3] =   {0.0f, 0.0f, -1.0f};*/     // posição apontada pela câmera /*
+          camera_pointer[3] =   {0.0f, 0.0f, -1.0f};*/     // posição apontada pela câmera
 
 
     float camera_position[3]  = {1.0f, 0.1f, 0.1f},   // posição da câmera
