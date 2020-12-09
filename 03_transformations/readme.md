@@ -40,7 +40,7 @@ Gerando a seguinte imagem:
 ![EXERCICIO3CORRIGIDO](https://user-images.githubusercontent.com/72406702/101562932-1cc61f80-39a7-11eb-812d-01538bb0174d.png)
 
 ## Exercício 4
-Para a resolução do quarto exercício, baseado nas teorias passadas pelo professor durante as aulas, foi necessário adicionar mais código. Para que seja gerada a imagem solicitada na atividade, a figura 8, foram adicionadas informações como: a posição da câmera = (-1/10,1/10,1/10), o vetor up da câmera = (0,1,0) e o ponto  para  o  qual a câmera está apontando = (0,0,−1). O código ficou dessa forma:
+Para a resolução do quarto exercício, baseado nas teorias passadas pelo professor durante as aulas, além de utilizar o código do Exercício 3, foi necessário também adicionar mais código. Para que seja gerada a imagem solicitada na atividade, a figura 8, foram adicionadas informações como: a posição da câmera = (-1/10,1/10,1/10), o vetor up da câmera = (0,1,0) e o ponto  para  o  qual a câmera está apontando = (0,0,−1). O código ficou dessa forma:
 
 ![CODIGOEXERCICIO4](https://user-images.githubusercontent.com/72406702/101538019-423d3400-397b-11eb-99f1-5ac3a3498baf.png)
 
@@ -81,7 +81,7 @@ Caso queira alterar os valores da câmera, uma idéia seria os seguintes valores
 
 ![EXERCICIO5COMALTERAÇÃOCAMERA](https://user-images.githubusercontent.com/72406702/101540687-1f148380-397f-11eb-8d46-06700aa7ac05.png)
 
-Teríamos a seguinte imagem gerada:
+Assim, teríamos a seguinte imagem gerada:
 
 ![EXERCICIO5COMCAMERA](https://user-images.githubusercontent.com/72406702/101540700-2b004580-397f-11eb-8431-779cd672f7d7.png)
 
