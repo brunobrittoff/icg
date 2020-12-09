@@ -144,7 +144,7 @@ void Display(void) {
     /*float proj_array[16] = {1.0f, 0.0f, 0.0f, 0.0f, 
                             0.0f, 1.0f, 0.0f, 0.0f,           // Exercício 3 e 4
                             0.0f, 0.0f, 1.0f, -8.0f, 
-                            0.0f, 0.0f, 0.125f, 1.0f};*/
+                            0.0f, 0.0f, 0.125f, 0.0f};*/
 
     /*float proj_array[16] = {1.0f, 0.0f, 0.0f, 0.0f, 
                             0.0f, 1.0f, 0.0f, 0.0f,           // Sem Alterações
